@@ -1,0 +1,6 @@
+../source/sai_interrupt_record_playback.c:94:6:BOARD_MasterClockConfig	8	static
+../source/sai_interrupt_record_playback.c:101:6:BOARD_SAI_RXConfig	24	static
+../source/sai_interrupt_record_playback.c:108:13:callback	24	static
+../source/sai_interrupt_record_playback.c:113:6:DelayMS	24	static
+../source/sai_interrupt_record_playback.c:129:6:mp3	24	static
+../source/sai_interrupt_record_playback.c:153:5:main	56	static

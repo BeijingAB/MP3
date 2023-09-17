@@ -1,0 +1,15 @@
+../codec/fsl_dialog7212.c:296:10:DA7212_WriteRegister	32	static
+../codec/fsl_dialog7212.c:306:10:DA7212_ReadRegister	32	static
+../codec/fsl_dialog7212.c:315:17:DA7212_ModifyRegister	24	static
+../codec/fsl_dialog7212.c:332:10:DA7212_Init	32	static
+../codec/fsl_dialog7212.c:413:10:DA7212_SetPLLConfig	72	static
+../codec/fsl_dialog7212.c:483:10:DA7212_SetProtocol	16	static
+../codec/fsl_dialog7212.c:488:10:DA7212_ConfigAudioFormat	32	static
+../codec/fsl_dialog7212.c:562:10:DA7212_SetMasterModeBits	24	static
+../codec/fsl_dialog7212.c:588:6:DA7212_ChangeInput	24	static
+../codec/fsl_dialog7212.c:600:6:DA7212_ChangeOutput	24	static
+../codec/fsl_dialog7212.c:612:6:DA7212_ChangeHPVolume	16	static
+../codec/fsl_dialog7212.c:618:6:DA7212_Mute	24	static
+../codec/fsl_dialog7212.c:635:10:DA7212_SetChannelVolume	32	static
+../codec/fsl_dialog7212.c:662:10:DA7212_SetChannelMute	32	static
+../codec/fsl_dialog7212.c:685:10:DA7212_Deinit	16	static
