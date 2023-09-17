@@ -142,7 +142,8 @@ void mp3(sai_transfer_t xfer) {
 		/*  xfer structure */
 		temp          = (uint32_t)m_dataRead;
 		xfer.data     = (uint8_t *)temp;
-		xfer.dataSize = MUSIC_LEN;
+//		xfer.dataSize = MUSIC_LEN;
+		xfer.dataSize = MP3_DATA_BLOCK_COUNT * MP3_FSL_SDMMC_DEFAULT_BLOCK_SIZE;
 		SAI_TransferSendNonBlocking(DEMO_SAI, &txHandle, &xfer);
 		/* Wait until finished */
 		while (isFinished != true)
