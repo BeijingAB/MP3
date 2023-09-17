@@ -127,24 +127,30 @@ void DelayMS(uint32_t ms)
 #define MP3_DATA_BUFFER_SIZE (MP3_FSL_SDMMC_DEFAULT_BLOCK_SIZE * MP3_DATA_BLOCK_COUNT)
 SDK_ALIGN(uint8_t m_dataRead[MP3_DATA_BUFFER_SIZE], BOARD_SDMMC_DATA_BUFFER_ALIGN_SIZE);
 void mp3(sai_transfer_t xfer) {
-	// read sd
-	sd_card_t *card = &g_sd;
-    if (kStatus_Success != SD_ReadBlocks(card, m_dataRead, MP3_DATA_BLOCK_START, MP3_DATA_BLOCK_COUNT))
-    {
-        PRINTF("Read multiple data blocks failed.\r\n");
-    }
+	int music_index = 0;
+	while (1) {
+		// read sd
+		sd_card_t *card = &g_sd;
+		if (kStatus_Success != SD_ReadBlocks(card, m_dataRead, MP3_DATA_BLOCK_START + music_index * MP3_DATA_BLOCK_COUNT, MP3_DATA_BLOCK_COUNT))
+		{
+			PRINTF("Read multiple data blocks failed.\r\n");
+		}
+		music_index++;
 
-    // write sai
-    uint32_t temp = 0;
-    /*  xfer structure */
-    temp          = (uint32_t)m_dataRead;
-    xfer.data     = (uint8_t *)temp;
-    xfer.dataSize = MUSIC_LEN;
-    SAI_TransferSendNonBlocking(DEMO_SAI, &txHandle, &xfer);
-    /* Wait until finished */
-    while (isFinished != true)
-    {
-    }
+		// write sai
+		uint32_t temp = 0;
+		/*  xfer structure */
+		temp          = (uint32_t)m_dataRead;
+		xfer.data     = (uint8_t *)temp;
+		xfer.dataSize = MUSIC_LEN;
+		SAI_TransferSendNonBlocking(DEMO_SAI, &txHandle, &xfer);
+		/* Wait until finished */
+		while (isFinished != true)
+		{
+		}
+		isFinished = false;
+
+	}
 }
 
 /*!
