@@ -1,0 +1,10 @@
+../codec/port/da7212/fsl_codec_da7212_adapter.c:58:10:HAL_CODEC_DA7212_Init	32	static
+../codec/port/da7212/fsl_codec_da7212_adapter.c:79:10:HAL_CODEC_DA7212_Deinit	16	static
+../codec/port/da7212/fsl_codec_da7212_adapter.c:95:10:HAL_CODEC_DA7212_SetFormat	24	static
+../codec/port/da7212/fsl_codec_da7212_adapter.c:111:10:HAL_CODEC_DA7212_SetVolume	32	static
+../codec/port/da7212/fsl_codec_da7212_adapter.c:146:10:HAL_CODEC_DA7212_SetMute	24	static
+../codec/port/da7212/fsl_codec_da7212_adapter.c:162:10:HAL_CODEC_DA7212_SetPower	24	static
+../codec/port/da7212/fsl_codec_da7212_adapter.c:175:10:HAL_CODEC_DA7212_SetRecord	16	static
+../codec/port/da7212/fsl_codec_da7212_adapter.c:191:10:HAL_CODEC_DA7212_SetRecordChannel	24	static
+../codec/port/da7212/fsl_codec_da7212_adapter.c:204:10:HAL_CODEC_DA7212_SetPlay	16	static
+../codec/port/da7212/fsl_codec_da7212_adapter.c:219:10:HAL_CODEC_DA7212_ModuleControl	24	static

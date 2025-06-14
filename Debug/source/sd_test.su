@@ -1,0 +1,6 @@
+C:\Users\JasonLiang\Documents\MCUXpressoIDE_11.7.0_9198\workspace\MP3\drivers/fsl_sysmpu.h:268:20:SYSMPU_Enable	16	static
+../source/sd_test.c:52:13:SDCARD_DetectCallBack	16	static
+../source/sd_test.c:57:17:AccessCard	16	static
+../source/sd_test.c:138:5:sd_test	24	static
+../source/sd_test.c:233:5:sd_run	16	static
+../source/sd_test.c:294:13:CardInformationLog	16	static
