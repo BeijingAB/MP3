@@ -1,5 +1,5 @@
-C:\Users\JasonLiang\Documents\MCUXpressoIDE_11.7.0_9198\workspace\MP3\drivers/fsl_common_arm.h:579:24:DisableGlobalIRQ	16	static
-C:\Users\JasonLiang\Documents\MCUXpressoIDE_11.7.0_9198\workspace\MP3\drivers/fsl_common_arm.h:606:20:EnableGlobalIRQ	24	static
+C:\Users\heyan\Downloads\MCUXpressoProject\MP3\drivers/fsl_common_arm.h:579:24:DisableGlobalIRQ	16	static
+C:\Users\heyan\Downloads\MCUXpressoProject\MP3\drivers/fsl_common_arm.h:606:20:EnableGlobalIRQ	24	static
 ../component/osa/fsl_os_abstraction_bm.c:153:18:main_task	16	static
 ../component/osa/fsl_os_abstraction_bm.c:184:7:OSA_MemoryAllocate	24	static
 ../component/osa/fsl_os_abstraction_bm.c:202:6:OSA_MemoryFree	16	static

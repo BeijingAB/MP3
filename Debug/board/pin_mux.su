@@ -1,5 +1,5 @@
-C:\Users\JasonLiang\Documents\MCUXpressoIDE_11.7.0_9198\workspace\MP3\drivers/fsl_clock.h:668:20:CLOCK_EnableClock	24	static
-C:\Users\JasonLiang\Documents\MCUXpressoIDE_11.7.0_9198\workspace\MP3\drivers/fsl_port.h:271:20:PORT_SetPinConfig	32	static
-C:\Users\JasonLiang\Documents\MCUXpressoIDE_11.7.0_9198\workspace\MP3\drivers/fsl_port.h:374:20:PORT_SetPinMux	24	static
+C:\Users\heyan\Downloads\MCUXpressoProject\MP3\drivers/fsl_clock.h:668:20:CLOCK_EnableClock	24	static
+C:\Users\heyan\Downloads\MCUXpressoProject\MP3\drivers/fsl_port.h:271:20:PORT_SetPinConfig	32	static
+C:\Users\heyan\Downloads\MCUXpressoProject\MP3\drivers/fsl_port.h:374:20:PORT_SetPinMux	24	static
 ../board/pin_mux.c:48:6:BOARD_InitBootPins	8	static
 ../board/pin_mux.c:79:6:BOARD_InitPins	56	static

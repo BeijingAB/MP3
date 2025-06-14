@@ -37,7 +37,7 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := MP3
+BUILD_ARTIFACT_NAME := frdmk66f_sai_interrupt_transfer
 BUILD_ARTIFACT_EXTENSION := axf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
@@ -49,24 +49,24 @@ all:
 	+@$(MAKE) --no-print-directory main-build && $(MAKE) --no-print-directory post-build
 
 # Main-build Target
-main-build: MP3.axf
+main-build: frdmk66f_sai_interrupt_transfer.axf
 
 # Tool invocations
-MP3.axf: $(OBJS) $(USER_OBJS) makefile $(OPTIONAL_TOOL_DEPS)
+frdmk66f_sai_interrupt_transfer.axf: $(OBJS) $(USER_OBJS) makefile $(OPTIONAL_TOOL_DEPS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -Xlinker -Map="MP3.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -T MP3_Debug.ld -o "MP3.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmk66f_sai_interrupt_transfer.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -T frdmk66f_sai_interrupt_transfer_Debug.ld -o "frdmk66f_sai_interrupt_transfer.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) MP3.axf
+	-$(RM) frdmk66f_sai_interrupt_transfer.axf
 	-@echo ' '
 
 post-build:
 	-@echo 'Performing post-build steps'
-	-arm-none-eabi-size "MP3.axf"; # arm-none-eabi-objcopy -v -O binary "MP3.axf" "MP3.bin" ; # checksum -p MK66FN2M0xxx18 -d "MP3.bin";
+	-arm-none-eabi-size "frdmk66f_sai_interrupt_transfer.axf"; # arm-none-eabi-objcopy -v -O binary "frdmk66f_sai_interrupt_transfer.axf" "frdmk66f_sai_interrupt_transfer.bin" ; # checksum -p MK66FN2M0xxx18 -d "frdmk66f_sai_interrupt_transfer.bin";
 	-@echo ' '
 
 .PHONY: all clean dependents main-build post-build
